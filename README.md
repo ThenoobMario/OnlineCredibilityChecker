@@ -1,7 +1,7 @@
 # OnlineCredibilityChecker
 
 
-##Definition
+## Definition ##
 1.Don't you hate it when someone walks into an interview has all the right qualifactions but as an employer you are worried that the
 person might not fit into the workplace culture. Well here's the solution to that problem.
 2.Wheneve you're hiring an influencer to promote your brand you might have some doubts and would like it if you could get the concise information
@@ -20,7 +20,7 @@ Here you can see the online persona of the person,the topics he is interested in
 
 
 
-##Tech Stash
+## Tech Stash ##
 
 1. sklearn
 2. streamlit
@@ -28,13 +28,13 @@ Here you can see the online persona of the person,the topics he is interested in
 4. tweepy
 5. demoji
 
-##Video##
+## Video ##
 
 _____________________________________________
 
 
 
-## Github and Likedin sources
+## Github and Likedin sources ##
 
 1. Nachiket Soni
   Github - https://github.com/ThenoobMario

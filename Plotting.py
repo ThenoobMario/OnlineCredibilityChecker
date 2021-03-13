@@ -131,29 +131,3 @@ def tweetClusterClassfier(cleanedTweets, likes, retweet):
     fig, num = numWords(df['Tweet'], 15)
 
     return fig, num, mostFreq, likeFig, retweetFig
-
-
-# df=generate_tweet_data('GyaneshShah',500)
-# print(df.shape)
-# print(df.head()[['cleaned_hashtags','emojisUsed']])
-# fig,num,cluster,likes_fig,retweet_fig=tweetClusterClassfier(df['Cleaned_tweets'],df['likes'],df['retweets'])
-# fig.show()
-# print(num)
-# print(cluster)
-# likes_fig.show()
-# retweet_fig.show()
-# fig,num,totalUsed=numEmojis(df['emojisUsed'], 50)
-# fig.show()
-# print('Number of unique emojis: ',num)
-# print('Total emojis used : ', totalUsed)
-# fig,num,totalUsed=numHashtags(df['cleaned_hashtags'], 50)
-# fig.show()
-# print('Number of unique hastags ',num)
-# print('Total hashtags used : ',totalUsed)
-# fig,num=numWords(df['Cleaned_tweets'],100)
-# fig.show()
-# print('Number of unique words used ',num)
-#
-# print(numLinksShared(df['links']))
-# print('The average tweet length is : ',np.mean(df['tweetLength']))
-# print('The average words used in a tweet : ', np.median(df['numberOfUniqueWords']))

@@ -1,11 +1,12 @@
 import tweepy as tw
+from os import environ
 
 def authenticate():
     # Entering the credentials for authentication
-    apiKey = 'API KEY'
-    apiSecret = 'SECRET API KEY'
-    apiAccess = 'ACCESS KEY'
-    apiAccessSecret = 'ACCESS SECRET KEY'
+    apiKey = environ['apiKey']
+    apiSecret = environ['apiSecret']
+    apiAccess = environ['apiAccess']
+    apiAccessSecret = environ['apiAccessSecret']
 
     # Authenticating
     auth = tw.AppAuthHandler(apiKey, apiSecret)

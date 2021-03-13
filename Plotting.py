@@ -68,7 +68,7 @@ def numEmojis(listOfEmojis, num):
                 labels = {'x': 'Emojis', 'y': 'Number of times used'},
                 title = 'Emoji Usage')
 
-    return fig, len(set(h)), len(h)
+    return fig # len(set(h)), len(h)
 
 
 # Returns bar plot of number of hashtags, unique hashtags used and hastag frequency

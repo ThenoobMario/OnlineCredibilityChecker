@@ -1,44 +1,50 @@
-# OnlineCredibilityChecker
+# Online Credibility Checker
+As an Interviewer, wouldn’t you love to know how the person you’re interviewing would behave in the workplace?
+
+Because:
+1. The interview is the one place where they would be their **best self**.
+
+2. As a company with professional employees, its better to perform a background check of the _"to-be"_ employees.
+
+3. As a Sales representative, you have to choose an influencer which is **best suited** to promote your product.
+
+4. Also the member of the HR Team should know if the person is prone to writing something triggering, which would *jeopardize* their position or the company.
+
+This is where the **Online Credibility Checker** comes in.
+
+## Solution
+Use this tool to check the [Online Persona](https://www.merriam-webster.com/dictionary/persona) of a potential employee.
+
+- The credibility checker uses (for now) the **tweets**  of the person to identify their most common hashtags, emojis and words used.
+
+- It also uses a clustering algorithm to classify the tweets into 10 different groups and then using these predictions, a *probable* judgment about the person's Online Persona is made.
+
+- Greater insights are also given in the form of correlative plots between the average number of likes and retweets vs. the respective clusters.
+
+## Dataset
 
 
-## Definition ##
-1.Don't you hate it when someone walks into an interview has all the right qualifactions but as an employer you are worried that the
-person might not fit into the workplace culture. Well here's the solution to that problem.
-2.Wheneve you're hiring an influencer to promote your brand you might have some doubts and would like it if you could get the concise information
-about the influencers reach,online persona and how he interacts with his audience.
-3.As most people say that the employees are the face of the company for the general public. So if an employee is 
-busy bad mouthing the company or creating a profile that is harmful for the company's image and should be dealt with as quickly as possible.
+## Tech Stack
+1. **Tweepy:** Used to authenticate the Twitter API and read data using it.
 
-The solution to all above problems is the **Online Credibility Checker**.
+2. **SciKit-Learn:** The Machine Learning library used for clustering.
 
-Here you can see the online persona of the person,the topics he is interested in and much more.
+3. **Natural Language Toolkit:** The toolkit used for parsing and cleaning tweets.
 
-1.The credibility checker uses the tweets of the person to identify the most common hashtags, emojis and words used by the person.
-2.It also uses a clustering algorithm to classify the tweets into 10 different clusters and using these predictions the judgment about the 
-  persons online persona is made.
-3. The average number of likes and retweets for all the respective clusters are also used.
+4. **Streamlit:** Used to Build and Share the data app.
+
+## Video
 
 
-
-## Tech Stash ##
-
-1. sklearn
-2. streamlit
-3. nltk
-4. tweepy
-5. demoji
-
-## Video ##
-
-_____________________________________________
-
-
-
-## Github and Likedin sources ##
-
-1. Nachiket Soni
-  Github - https://github.com/ThenoobMario
-  LiknedIn - https://www.linkedin.com/in/nachiket-soni-9519021aa/
+## Creators
+1. [Nachiket Soni](https://drive.google.com/file/d/1sa0eneGdQIHT5otRii-sYNLVCIU9DtAR/view?usp=sharing)
+    - Github - [@ThenoobMario](https://github.com/ThenoobMario)
+    - LinkedIn - [Nachiket Soni](https://www.linkedin.com/in/nachiket-soni-9519021aa/)
 2. Nidhay Pancholi
-  Github - https://github.com/NidhayPancholi
-  LinkedIn - https://www.linkedin.com/in/nidhay-pancholi-740a701a5/
+    - Github - [@NidhayPancholi](https://github.com/NidhayPancholi)
+    - LinkedIn - [Nidhay Pancholi](https://www.linkedin.com/in/nidhay-pancholi-740a701a5/)
+
+## What's next?
+[ ] Trying out better clustering algorithms to refine the Machine Learning Process.
+
+[ ] Including more social media platforms to such as LinkedIn, Instagram etc. for better judgement.

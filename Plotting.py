@@ -92,7 +92,7 @@ def numHashtags(listOfHashtags, num):
                 labels = {'x': 'Hashtags','y': 'Number of times used'},
                 title = 'Hashtag Usage')
 
-    return fig, len(set(h)), len(h)
+    return fig # len(set(h)), len(h)
 
 # df.replace()
 def tweetClusterClassfier(cleanedTweets, likes, retweet):

@@ -1,15 +1,15 @@
 import demoji
 import joblib
-from Get_Data import getUserData
 import re
 from nltk.corpus import stopwords
+from Get_Data import getUserData
 
 
 # Declaring a global regex string
 regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
 
 def predictCluster(list_of_tweets):
-    pipeline = joblib.load('model.sav')
+    pipeline = joblib.load('./model/model.sav')
     pred = pipeline.fit_predict(list_of_tweets)
 
     return pred

@@ -5,7 +5,6 @@ numpy
 sklearn
 wordcloud
 demoji
-re
 joblib
 tweepy
 nltk

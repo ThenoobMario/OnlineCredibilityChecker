@@ -45,6 +45,6 @@ Use this tool to check the [Online Persona](https://www.merriam-webster.com/dict
     - LinkedIn - [Nidhay Pancholi](https://www.linkedin.com/in/nidhay-pancholi-740a701a5/)
 
 ## What's next?
-[ ] Trying out better clustering algorithms to refine the Machine Learning Process.
+*Trying out better clustering algorithms to refine the Machine Learning Process.
 
-[ ] Including more social media platforms to such as LinkedIn, Instagram etc. for better judgement.
+*Including more social media platforms to such as LinkedIn, Instagram etc. for better judgement.

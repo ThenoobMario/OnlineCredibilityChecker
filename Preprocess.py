@@ -33,6 +33,7 @@ def cleanData(x):
     x = x.strip()
     # removing usernames
     x = re.sub('@[^\s]+', '', x)
+    x=re.sub('[^A-Za-z]',' ',x)
     # Generate a list of stop words
     stop = stopwords.words('english')
     # Removing puncutations

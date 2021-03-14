@@ -59,7 +59,7 @@ def numHashtags(listOfHashtags, num):
         h.extend(x)
 
     if len(h) == 0:
-        return px.bar(title = 'No Hastags used'), 0, 0
+        return px.bar(title = 'No Hastags used') , 0
 
     counts = Counter(h)
 
@@ -72,7 +72,7 @@ def numHashtags(listOfHashtags, num):
                 labels = {'x': 'Hashtags','y': 'Number of times used'},
                 title = 'Hashtag Usage')
 
-    return fig # len(set(h)), len(h)
+    return fig, 1 # len(set(h)), len(h)
 
 # df.replace()
 def tweetClusterClassfier(cleanedTweets, likes, retweet):

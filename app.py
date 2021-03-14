@@ -21,8 +21,8 @@ def main():
         fig, uniqueWords, cluster, likesFig, retweetFig = tweetClusterClassfier(df['Cleaned_tweets'], df['likes'], df['retweets'])
 
         st.markdown("---")
-        st.header("The Result")
-        st.write("The **Online Persona** of the person is ", cluster, ".")
+        st.title("The Result")
+        st.write("## The **Online Persona** of the person is ", cluster, ".")
 
         st.markdown("### Here are some plots for greater Insights:")
         st.write("- Number of **unique words** used by the person:", uniqueWords)
@@ -44,10 +44,12 @@ def main():
         st.markdown("- Here is a graph showing the Correlation between **Average Retweets** and the **Clusters**:")
         st.plotly_chart(retweetFig)
 
-        st.markdown("- The person uses the following **Hashtags** frequently:")
-        hashFig = numHashtags(df['cleaned_hashtags'], 15)
-        st.plotly_chart(hashFig)
-
+        hashFig, contains = numHashtags(df['cleaned_hashtags'], 15)
+        if contains:
+            st.markdown("- The person uses the following **Hashtags** frequently:")
+            st.plotly_chart(hashFig)
+        else:
+            st.markdown("- The user hasn't used any **hashtags**.")
 
 
 if __name__ == "__main__":

@@ -1,4 +1,3 @@
-import demoji
 import joblib
 import re
 from nltk.corpus import stopwords
@@ -36,8 +35,6 @@ def cleanData(x):
     x = re.sub('@[^\s]+', '', x)
     # Generate a list of stop words
     stop = stopwords.words('english')
-    # Replace the emojis in the string with their description
-    x = demoji.replace(x,'')
     # Removing puncutations
     x = re.sub('[:!,?@]', ' ', x)
     x = x.split(" ")
@@ -67,8 +64,6 @@ def getHashtags(x):
 
     return hashtags
 
-def getEmojis(x):
-    h = demoji.findall(x)
 
     return h.keys()
 
@@ -93,7 +88,6 @@ def generateTweetData(username, numTweets):
     df['Cleaned_tweets'] = df['tweets'].apply(lambda x:cleanData(x))
     df['links'] = df['tweets'].apply(lambda x:getLinks(x))
     df['cleaned_hashtags'] = df['hashtags'].apply(lambda x:getHashtags(x))
-    df['emojisUsed'] = df['tweets'].apply(lambda x:getEmojis(x))
     df['QuestionMarksInTweet'] = df['tweets'].apply(lambda x:countQuestionmarks(x))
     df['ExclamationMarksInTweet'] = df['tweets'].apply(lambda x:countExclamation(x))
     df['Mentions'] = df['tweets'].apply(lambda x: findMentions(x))

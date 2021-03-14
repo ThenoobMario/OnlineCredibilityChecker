@@ -4,7 +4,6 @@ pandas
 numpy
 sklearn
 wordcloud
-demoji
 joblib
 tweepy
 nltk

@@ -12,6 +12,8 @@ Because:
 
 This is where the **Online Credibility Checker** comes in.
 
+![Online Credibility Checker](./assets/FrontPage.png)
+
 ## Solution
 Use this tool to check the [Online Persona](https://www.merriam-webster.com/dictionary/persona) of a potential employee.
 

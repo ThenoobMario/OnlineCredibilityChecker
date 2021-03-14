@@ -111,12 +111,13 @@ def tweetClusterClassfier(cleanedTweets, likes, retweet):
     fig, num = numWords(df['Tweet'], 15)
 
     return fig, num, mostFreq, likeFig, retweetFig
-#making wordcloud using user tweets
+
+# making wordcloud using user tweets
 def makeCloud(cleanedTweets):
     h=[]
     for x in cleanedTweets:
         x=x.split(' ')
         h.extend(x)
     str=" ".join(h)
-    cloud=WordCloud(min_font_size=6,background_color='white',max_words=30,height=400,width=400).generate(str)
+    cloud=WordCloud(min_font_size=6,background_color='white',max_words=30,height=300,width=300).generate(str)
     return cloud

@@ -1,9 +1,11 @@
 import streamlit as st
+import matplotlib.pyplot as plt
 from Preprocess import generateTweetData
-from Plotting import tweetClusterClassfier, numHashtags
+from Plotting import tweetClusterClassfier, numHashtags, makeCloud
 
 # Just making sure we are not bothered by File Encoding warnings
 st.set_option('deprecation.showfileUploaderEncoding', False)
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 def main():
     # Title of our webpage
@@ -26,6 +28,14 @@ def main():
         st.write("- Number of **unique words** used by the person:", uniqueWords)
 
         st.markdown("- The person uses the following **words** frequently:")
+        wordCloud = makeCloud(df['Cleaned_tweets'])
+        # Display the generated image:
+        plt.imshow(wordCloud, interpolation = 'bilinear')
+        plt.axis("off")
+        plt.show()
+        st.pyplot()
+
+        st.markdown("- These are the word frequencies inside the **Predicted** Persona:")
         st.plotly_chart(fig)
 
         st.markdown("- Here is a graph showing the Correlation between **Average Likes** and the **Clusters**:")
@@ -38,7 +48,7 @@ def main():
         hashFig = numHashtags(df['cleaned_hashtags'], 15)
         st.plotly_chart(hashFig)
 
-    
+
 
 if __name__ == "__main__":
     main()

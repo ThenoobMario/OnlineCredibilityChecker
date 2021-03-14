@@ -50,26 +50,6 @@ def avgUniqueWords(uniqueWordList):
 
     return avg, std
 
-# Returns bar plot of number of emojis, unique emojis used and emoji frequency
-def numEmojis(listOfEmojis, num):
-    h = []
-
-    for x in listOfEmojis:
-        h.extend(x)
-
-    if len(h) == 0:
-        return px.bar(title = 'No Emojis used'), 0, 0
-
-    counts = Counter(h)
-
-    sorted_dict = createSortedDict(counts, num)
-
-    fig = px.bar(x = sorted_dict.keys(), y = sorted_dict.values(),
-                labels = {'x': 'Emojis', 'y': 'Number of times used'},
-                title = 'Emoji Usage')
-
-    return fig # len(set(h)), len(h)
-
 
 # Returns bar plot of number of hashtags, unique hashtags used and hastag frequency
 def numHashtags(listOfHashtags, num):

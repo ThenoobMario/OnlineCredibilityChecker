@@ -1,6 +1,6 @@
 import streamlit as st
 from Preprocess import generateTweetData
-from Plotting import tweetClusterClassfier, numHashtags, numEmojis
+from Plotting import tweetClusterClassfier, numHashtags
 
 # Just making sure we are not bothered by File Encoding warnings
 st.set_option('deprecation.showfileUploaderEncoding', False)

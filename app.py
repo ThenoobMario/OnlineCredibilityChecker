@@ -38,9 +38,7 @@ def main():
         hashFig = numHashtags(df['cleaned_hashtags'], 15)
         st.plotly_chart(hashFig)
 
-        st.markdown("- The person uses the following **Emojis** frequently:")
-        emojiFig = numEmojis(df['emojisUsed'], 15)
-        st.plotly_chart(emojiFig)
+    
 
 if __name__ == "__main__":
     main()

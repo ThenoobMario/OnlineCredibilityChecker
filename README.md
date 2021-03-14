@@ -36,7 +36,7 @@ Use this tool to check the [Online Persona](https://www.merriam-webster.com/dict
 4. **Streamlit:** Used to Build and Share the data app.
 
 ## Video
-
+You can check the video out [**here**](https://drive.google.com/file/d/1ZtT5u9hNkfAD9ff7JyhMOsBU8_bniE-3/view?usp=sharing).
 
 ## Creators
 1. [Nachiket Soni](https://drive.google.com/file/d/1sa0eneGdQIHT5otRii-sYNLVCIU9DtAR/view?usp=sharing)

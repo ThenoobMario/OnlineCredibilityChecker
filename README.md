@@ -35,6 +35,8 @@ Use this tool to check the [Online Persona](https://www.merriam-webster.com/dict
 
 4. **Streamlit:** Used to Build and Share the data app.
 
+5. **Heroku:** It is used to deploy the app. 
+
 ## Video
 You can check the video out [**here**](https://drive.google.com/file/d/1ZtT5u9hNkfAD9ff7JyhMOsBU8_bniE-3/view?usp=sharing).
 
